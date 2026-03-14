@@ -1,0 +1,84 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* Main container */
+.container {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 500px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Title */
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #cfd8dc;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+/* Pipeline container */
+.pipeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Pipeline stages */
+.stage {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.stage:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+}
+
+/* Arrows */
+.arrow {
+    font-size: 24px;
+    margin: 0 15px;
+    color: #90caf9;
+}
+
+/* Pipeline status */
+.status {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Active status highlight */
+.status strong {
+    color: #00e676;
+}
